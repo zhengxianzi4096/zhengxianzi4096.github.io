@@ -13,69 +13,72 @@
 
     <!-- ===== 结构化数据 (JSON-LD) ===== -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "郑天赐",
-      "alternateName": ["Zheng Tianci"],
-      "jobTitle": "电气工程技术人员",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "贵州工业职业技术学院"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "贵阳",
-        "addressRegion": "贵州",
-        "addressCountry": "中国"
-      },
-      "nationality": {
-        "@type": "Country",
-        "name": "中国"
-      },
-      "birthDate": "2003-10-05",
-      "award": [
         {
-          "@type": "Award",
-          "name": "电工三级（高级工）职业技能等级证书",
-          "awardingOrganization": "贵州工业职业技术学院",
-          "date": "2024-09-26"
-        },
-        {
-          "@type": "Award",
-          "name": "计算机软件著作权登记证书",
-          "awardingOrganization": "中华人民共和国国家版权局",
-          "date": "2026-07-06",
-          "identifier": "2026SR0712497"
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "郑天赐",
+            "alternateName": ["Zheng Tianci"],
+            "jobTitle": "电气工程技术人员",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "贵州工业职业技术学院",
+                "url": "http://www.gzky.edu.cn/"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "贵阳",
+                "addressRegion": "贵州",
+                "addressCountry": "中国"
+            },
+            "nationality": {
+                "@type": "Country",
+                "name": "中国"
+            },
+            "birthDate": "2003-10-05",
+            "award": [{
+                "@type": "Award",
+                "name": "电工三级（高级工）职业技能等级证书",
+                "awardingOrganization": {
+                    "@type": "Organization",
+                    "name": "贵州工业职业技术学院",
+                    "url": "http://www.gzky.edu.cn/"
+                },
+                "date": "2024-09-26"
+            }, {
+                "@type": "Award",
+                "name": "计算机软件著作权登记证书",
+                "awardingOrganization": {
+                    "@type": "Organization",
+                    "name": "中华人民共和国国家版权局"
+                },
+                "date": "2026-07-06",
+                "identifier": "2026SR0712497"
+            }],
+            "hasCredential": [{
+                "@type": "EducationalOccupationalCredential",
+                "name": "电工三级（高级工）",
+                "credentialCategory": "职业技能等级证书",
+                "issuedBy": {
+                    "@type": "Organization",
+                    "name": "贵州工业职业技术学院",
+                    "url": "http://www.gzky.edu.cn/"
+                }
+            }, {
+                "@type": "EducationalOccupationalCredential",
+                "name": "电力参数一体化计算平台 V2.0",
+                "credentialCategory": "计算机软件著作权",
+                "issuedBy": {
+                    "@type": "Organization",
+                    "name": "中华人民共和国国家版权局"
+                },
+                "identifier": "2026SR0712497"
+            }],
+            "knowsAbout": ["电力系统自动化", "电气工程软件工具开发", "工业软件开发"],
+            "url": "https://www.zhengtianci.com/",
+            "sameAs": [
+                "https://www.zhengtianci.com/"
+            ]
         }
-      ],
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "电工三级（高级工）",
-          "credentialCategory": "职业技能等级证书",
-          "issuedBy": {
-            "@type": "Organization",
-            "name": "贵州工业职业技术学院"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "电力参数一体化计算平台 V2.0",
-          "credentialCategory": "计算机软件著作权",
-          "issuedBy": {
-            "@type": "Organization",
-            "name": "中华人民共和国国家版权局"
-          },
-          "identifier": "2026SR0712497"
-        }
-      ],
-      "knowsAbout": ["电力系统自动化", "电气工程软件工具开发", "工业软件开发"],
-      "url": "https://www.zhengtianci.com/",
-      "sameAs": [
-        "https://www.zhengtianci.com/"
-      ]
-    }
     </script>
 
     <style>
@@ -162,6 +165,17 @@
         .info-table .value {
             color: #1e293b;
             font-weight: 500;
+        }
+
+        /* 统一链接样式 */
+        .school-link, .job-link {
+            color: #1a5bbf;
+            text-decoration: none;
+            border-bottom: 1px dashed #b0c8e0;
+            transition: border-color 0.2s;
+        }
+        .school-link:hover, .job-link:hover {
+            border-bottom: 1px solid #1a5bbf;
         }
 
         /* ===== 右侧正文 ===== */
@@ -427,70 +441,98 @@
 </head>
 <body>
 
-<div class="main-wrapper">
-    <!-- ===== 左侧信息栏 ===== -->
-    <aside class="sidebar">
-        <div class="avatar">
-            <img src="zheng_tianci.jpg" alt="郑天赐头像">
-        </div>
+    <div class="main-wrapper">
+        <!-- ===== 左侧信息栏 ===== -->
+        <aside class="sidebar">
+            <div class="avatar">
+                <img src="zheng_tianci.jpg" alt="郑天赐头像">
+            </div>
 
-        <table class="info-table">
-            <tr><td class="label">中文名</td><td class="value">郑天赐</td></tr>
-            <tr><td class="label">国籍</td><td class="value">中国</td></tr>
-            <tr><td class="label">民族</td><td class="value">汉族</td></tr>
-            <tr><td class="label">出生地</td><td class="value">贵州贵阳</td></tr>
-            <tr><td class="label">出生日期</td><td class="value">2003年10月5日</td></tr>
-            <tr><td class="label">职业</td><td class="value">电气工程技术人员</td></tr>
-            <tr><td class="label">毕业院校</td><td class="value">贵州工业职业技术学院</td></tr>
-            <tr><td class="label">主要成就</td><td class="value" style="font-size:13px; line-height:1.5;">独立开发“电力参数一体化计算平台”并获软著；持有电工三级（高级工）证书</td></tr>
-            <tr><td class="label">代表作品</td><td class="value">电力参数一体化计算平台 V2.0</td></tr>
-        </table>
-    </aside>
+            <table class="info-table">
+                <tr><td class="label">中文名</td><td class="value">郑天赐</td></tr>
+                <tr><td class="label">国籍</td><td class="value">中国</td></tr>
+                <tr><td class="label">民族</td><td class="value">汉族</td></tr>
+                <tr><td class="label">出生地</td><td class="value">贵州贵阳</td></tr>
+                <tr><td class="label">出生日期</td><td class="value">2003年10月5日</td></tr>
+                <tr>
+                    <td class="label">职业</td>
+                    <td class="value">
+                        <a class="job-link" href="https://baike.baidu.com/item/%E7%94%B5%E6%B0%94%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%91%98" target="_blank" rel="noopener noreferrer">
+                            电气工程技术人员
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">毕业院校</td>
+                    <td class="value">
+                        <a class="school-link" href="http://www.gzky.edu.cn/" target="_blank" rel="noopener noreferrer">
+                            贵州工业职业技术学院
+                        </a>
+                    </td>
+                </tr>
+                <tr><td class="label">主要成就</td><td class="value" style="font-size:13px; line-height:1.5;">独立开发“电力参数一体化计算平台”并获软著；持有电工三级（高级工）证书</td></tr>
+                <tr><td class="label">代表作品</td><td class="value">电力参数一体化计算平台 V2.0</td></tr>
+            </table>
+        </aside>
 
-    <!-- ===== 右侧正文 ===== -->
-    <main class="content">
-        <h1>郑天赐</h1>
-        <div class="subhead">电气工程技术人员</div>
+        <!-- ===== 右侧正文 ===== -->
+        <main class="content">
+            <h1>郑天赐</h1>
+            <div class="subhead">
+                <a class="job-link" href="https://baike.baidu.com/item/%E7%94%B5%E6%B0%94%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%91%98" target="_blank" rel="noopener noreferrer">
+                    电气工程技术人员
+                </a>
+            </div>
 
-        <p><strong>郑天赐</strong>，男，中国贵州贵阳人，电气工程技术人员、软件开发者。持有<strong>电工三级（高级工）</strong>职业技能等级证书，并独立开发了“<strong>电力参数一体化计算平台</strong>”，该软件于2026年7月6日获得中华人民共和国国家版权局计算机软件著作权登记（登记号：2026SR0712497）。主要研究方向为电力系统自动化与电气工程软件工具开发。</p>
-
-        <h2>人物经历</h2>
-        <ul>
-            <li><strong>2024年9月26日</strong>，通过贵州工业职业技术学院组织的职业技能等级认定，获得<strong>电工三级（高级工）</strong>职业技能等级证书（证书编号：Y000052003011243001558）。</li>
-            <li><strong>2026年7月6日</strong>，独立开发的“<strong>电力参数一体化计算平台</strong>”获得国家版权局计算机软件著作权登记证书（登记号：2026SR0712497）。</li>
-        </ul>
-
-        <h2>研究方向</h2>
-        <ul>
-            <li><strong>电力系统自动化</strong>：涉及电力系统运行、控制以及自动化技术。</li>
-            <li><strong>电气工程软件工具开发</strong>：针对电力参数计算、分析等环节，开发集成化、高效化的软件工具。</li>
-        </ul>
-
-        <h2>主要成就</h2>
-
-        <div class="highlight-box">
             <p>
-                <strong>软件著作权</strong>：2026年7月6日，独立开发的“电力参数一体化计算平台”获得计算机软件著作权登记（登记号：2026SR0712497）。该软件集成了电力系统过流计算、短路电流计算等核心功能，旨在提升电力参数计算的效率与准确性。
+                <strong>郑天赐</strong>，男，中国贵州贵阳人，电气工程技术人员、软件开发者。持有<strong>电工三级（高级工）</strong>职业技能等级证书，并独立开发了“<strong>电力参数一体化计算平台</strong>”，该软件于2026年7月6日获得中华人民共和国国家版权局计算机软件著作权登记（登记号：2026SR0712497）。主要研究方向为电力系统自动化与电气工程软件工具开发。
             </p>
-            <p class="check-link">
-                🔍 <a href="https://www.ccopyright.com.cn/" target="_blank" rel="noopener noreferrer">点此查验真伪（中国版权保护中心官网）</a>
-            </p>
-        </div>
 
-        <div class="highlight-box">
-            <p>
-                <strong>职业技能等级</strong>：2024年9月26日，获得电工三级（高级工）职业技能等级证书（证书编号：Y000052003011243001558），具备独立完成复杂电气系统安装、调试与故障排查的能力。
-            </p>
-            <p class="check-link">
-                🔍 <a href="http://jndj.osta.org.cn/" target="_blank" rel="noopener noreferrer">点此查验真伪（技能人才评价证书全国联网查询）</a>
-            </p>
-        </div>
+            <h2>人物经历</h2>
+            <ul>
+                <li>
+                    <strong>2024年9月26日</strong>，通过
+                    <a class="school-link" href="http://www.gzky.edu.cn/" target="_blank" rel="noopener noreferrer">
+                        贵州工业职业技术学院
+                    </a>
+                    组织的职业技能等级认定，获得<strong>电工三级（高级工）</strong>职业技能等级证书（证书编号：Y000052003011243001558）。
+                </li>
+                <li>
+                    <strong>2026年7月6日</strong>，独立开发的“<strong>电力参数一体化计算平台</strong>”获得国家版权局计算机软件著作权登记证书（登记号：2026SR0712497）。
+                </li>
+            </ul>
 
-        <div class="footer">
-            © 2026 郑天赐 &nbsp;|&nbsp; 数据更新日期：2026年7月11日
-        </div>
-    </main>
-</div>
+            <h2>研究方向</h2>
+            <ul>
+                <li><strong>电力系统自动化</strong>：涉及电力系统运行、控制以及自动化技术。</li>
+                <li><strong>电气工程软件工具开发</strong>：针对电力参数计算、分析等环节，开发集成化、高效化的软件工具。</li>
+            </ul>
+
+            <h2>主要成就</h2>
+
+            <div class="highlight-box">
+                <p>
+                    <strong>软件著作权</strong>：2026年7月6日，独立开发的“电力参数一体化计算平台”获得计算机软件著作权登记（登记号：2026SR0712497）。该软件集成了电力系统过流计算、短路电流计算等核心功能，旨在提升电力参数计算的效率与准确性。
+                </p>
+                <p class="check-link">
+                    🔍 <a href="https://www.ccopyright.com.cn/" target="_blank" rel="noopener noreferrer">点此查验真伪（中国版权保护中心官网）</a>
+                </p>
+            </div>
+
+            <div class="highlight-box">
+                <p>
+                    <strong>职业技能等级</strong>：2024年9月26日，获得电工三级（高级工）职业技能等级证书（证书编号：Y000052003011243001558），具备独立完成复杂电气系统安装、调试与故障排查的能力。
+                </p>
+                <p class="check-link">
+                    🔍 <a href="http://jndj.osta.org.cn/" target="_blank" rel="noopener noreferrer">点此查验真伪（技能人才评价证书全国联网查询）</a>
+                </p>
+            </div>
+
+            <div class="footer">
+                © 2026 郑天赐 &nbsp;|&nbsp; 数据更新日期：2026年7月11日
+            </div>
+        </main>
+    </div>
 
 </body>
 </html>
