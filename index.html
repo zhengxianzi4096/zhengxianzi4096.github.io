@@ -3,11 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>郑天赐 · 电气工程技术人员 </title>
-    <meta name="description" content="郑天赐，电气工程技术人员，持有电工三级（高级工）证书，独立开发电力参数一体化计算平台并获中国国家版权局软件著作权登记。">
-    <meta name="keywords" content="郑天赐, 电工三级, 软件著作权, 电力参数一体化计算平台, 电气工程">
+    <title>郑天赐 · 电气工程技术人员</title>
+
+    <!-- ===== 基础 SEO ===== -->
+    <meta name="description" content="郑天赐，电气工程技术人员，持有电工三级（高级工）证书，独立开发电力参数一体化计算平台并获国家版权局软件著作权。">
+    <meta name="keywords" content="郑天赐, 电工三级, 软件著作权, 电力参数一体化计算平台, 电气工程, 贵州工业职业技术学院">
+    <meta name="author" content="郑天赐">
+    <link rel="canonical" href="https://www.zhengtianci.com/">
+
+    <!-- ===== 结构化数据 (JSON-LD) ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "郑天赐",
+      "alternateName": ["Zheng Tianci"],
+      "jobTitle": "电气工程技术人员",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "贵州工业职业技术学院"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "贵阳",
+        "addressRegion": "贵州",
+        "addressCountry": "中国"
+      },
+      "nationality": {
+        "@type": "Country",
+        "name": "中国"
+      },
+      "birthDate": "2003-10-05",
+      "award": [
+        {
+          "@type": "Award",
+          "name": "电工三级（高级工）职业技能等级证书",
+          "awardingOrganization": "贵州工业职业技术学院",
+          "date": "2024-09-26"
+        },
+        {
+          "@type": "Award",
+          "name": "计算机软件著作权登记证书",
+          "awardingOrganization": "中华人民共和国国家版权局",
+          "date": "2026-07-06",
+          "identifier": "2026SR0712497"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "电工三级（高级工）",
+          "credentialCategory": "职业技能等级证书",
+          "issuedBy": {
+            "@type": "Organization",
+            "name": "贵州工业职业技术学院"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "电力参数一体化计算平台 V2.0",
+          "credentialCategory": "计算机软件著作权",
+          "issuedBy": {
+            "@type": "Organization",
+            "name": "中华人民共和国国家版权局"
+          },
+          "identifier": "2026SR0712497"
+        }
+      ],
+      "knowsAbout": ["电力系统自动化", "电气工程软件工具开发", "工业软件开发"],
+      "url": "https://www.zhengtianci.com/",
+      "sameAs": [
+        "https://www.zhengtianci.com/"
+      ]
+    }
+    </script>
+
     <style>
-        /* 全局重置 */
+        /* ===== 全局重置 ===== */
         * {
             margin: 0;
             padding: 0;
@@ -16,58 +88,50 @@
 
         body {
             background: #f4f7fa;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
-            color: #222;
-            padding: 30px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            color: #1e293b;
+            padding: 16px 12px;
             line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
         }
 
         .main-wrapper {
             max-width: 1200px;
+            width: 100%;
             margin: 0 auto;
             background: #ffffff;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-            border-radius: 8px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+            border-radius: 12px;
             display: flex;
             flex-wrap: wrap;
             overflow: hidden;
         }
 
-        /* ===== 左侧信息栏 (类似百科左侧) ===== */
+        /* ===== 左侧信息栏 ===== */
         .sidebar {
             width: 280px;
             background: #fafcfe;
-            padding: 24px 20px 30px;
+            padding: 20px 18px 24px;
             border-right: 1px solid #e9edf2;
             flex-shrink: 0;
         }
 
         .avatar {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         .avatar img {
-            width: 150px;
-            height: 150px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid #e9edf2;
-            background: #e9edf2;
-        }
-
-        .avatar .placeholder {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
             background: #dce3ec;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #8a9aa8;
-            font-size: 14px;
-            border: 3px solid #e9edf2;
+            display: inline-block;
         }
 
         .info-table {
@@ -79,7 +143,6 @@
         .info-table tr {
             border-bottom: 1px solid #edf2f7;
         }
-
         .info-table tr:last-child {
             border-bottom: none;
         }
@@ -101,16 +164,10 @@
             font-weight: 500;
         }
 
-        .info-table .value .empty {
-            color: #b0bcc8;
-            font-weight: 400;
-            font-style: italic;
-        }
-
         /* ===== 右侧正文 ===== */
         .content {
             flex: 1;
-            padding: 30px 35px 40px;
+            padding: 28px 32px 36px;
             min-width: 0;
         }
 
@@ -118,23 +175,23 @@
             font-size: 28px;
             font-weight: 700;
             color: #0b1e33;
-            margin-bottom: 6px;
-            letter-spacing: 1px;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
         }
 
         .content .subhead {
             font-size: 15px;
             color: #6b7a8a;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             border-bottom: 1px solid #e9edf2;
-            padding-bottom: 16px;
+            padding-bottom: 14px;
         }
 
         .content h2 {
             font-size: 20px;
             font-weight: 600;
             color: #0b1e33;
-            margin: 28px 0 12px 0;
+            margin: 26px 0 10px 0;
             padding-bottom: 6px;
             border-bottom: 2px solid #dce3ec;
         }
@@ -146,24 +203,21 @@
         }
 
         .content ul {
-            margin: 8px 0 16px 24px;
+            margin: 8px 0 16px 20px;
+            padding-left: 4px;
         }
 
         .content ul li {
             margin-bottom: 6px;
             font-size: 15px;
             color: #1e293b;
-        }
-
-        .content .empty-field {
-            color: #b0bcc8;
-            font-style: italic;
+            list-style-type: disc;
         }
 
         .content .highlight-box {
             background: #f5f9ff;
             border-left: 4px solid #2a6bb0;
-            padding: 12px 20px;
+            padding: 12px 18px;
             margin: 10px 0 18px 0;
             border-radius: 0 4px 4px 0;
         }
@@ -172,51 +226,202 @@
             color: #0b1e33;
         }
 
-        /* ===== 响应式 ===== */
+        .content .highlight-box .check-link {
+            display: inline-block;
+            margin-top: 6px;
+            font-size: 14px;
+        }
+        .content .highlight-box .check-link a {
+            color: #1a5bbf;
+            text-decoration: none;
+            border-bottom: 1px dashed #b0c8e0;
+        }
+        .content .highlight-box .check-link a:hover {
+            border-bottom: 1px solid #1a5bbf;
+        }
+
+        /* ===== 底部 ===== */
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e9edf2;
+            font-size: 13px;
+            color: #8a9aa8;
+            text-align: center;
+        }
+
+        /* ================================================
+                   手机端优化
+                   ================================================ */
         @media (max-width: 820px) {
+            body {
+                padding: 12px 8px;
+            }
+
+            .main-wrapper {
+                border-radius: 10px;
+                flex-direction: column;
+            }
+
             .sidebar {
                 width: 100%;
                 border-right: none;
                 border-bottom: 1px solid #e9edf2;
-                padding: 20px;
+                padding: 16px 16px 12px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 12px 16px;
             }
 
-            .avatar img, .avatar .placeholder {
-                width: 120px;
-                height: 120px;
+            .avatar {
+                flex-shrink: 0;
+                margin-bottom: 0;
+                width: 72px;
+                height: 72px;
+            }
+
+            .avatar img {
+                width: 72px;
+                height: 72px;
+                border-width: 2px;
+            }
+
+            .info-table {
+                flex: 1;
+                min-width: 160px;
+                font-size: 13px;
+            }
+
+            .info-table td {
+                padding: 4px 0;
+                display: inline-block;
+                width: 100%;
+            }
+
+            .info-table tr {
+                display: block;
+                border-bottom: none;
+                margin-bottom: 2px;
+            }
+
+            .info-table .label {
+                width: auto;
+                display: inline-block;
+                font-weight: 600;
+                color: #1e293b;
+                min-width: 60px;
+            }
+
+            .info-table .value {
+                display: inline;
             }
 
             .content {
-                padding: 20px;
+                padding: 18px 16px 24px;
             }
 
             .content h1 {
-                font-size: 24px;
+                font-size: 22px;
+            }
+
+            .content .subhead {
+                font-size: 14px;
+                margin-bottom: 14px;
+                padding-bottom: 12px;
+            }
+
+            .content h2 {
+                font-size: 18px;
+                margin-top: 20px;
+            }
+
+            .content p,
+            .content ul li {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+            .content ul {
+                margin-left: 16px;
+            }
+
+            .content .highlight-box {
+                padding: 10px 14px;
+                font-size: 14px;
+            }
+
+            .footer {
+                font-size: 12px;
+                margin-top: 24px;
             }
         }
 
         @media (max-width: 480px) {
-            .info-table td {
-                display: block;
-                padding: 4px 0;
+            body {
+                padding: 8px 4px;
             }
+
+            .sidebar {
+                padding: 12px 12px 10px;
+                gap: 8px;
+            }
+
+            .avatar {
+                width: 60px;
+                height: 60px;
+            }
+
+            .avatar img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .info-table {
+                font-size: 12px;
+            }
+
             .info-table .label {
-                width: auto;
-                font-weight: 600;
-                color: #1e293b;
+                min-width: 50px;
+                font-size: 12px;
             }
-            .info-table tr {
-                display: block;
-                border-bottom: none;
-                margin-bottom: 6px;
+
+            .content {
+                padding: 14px 12px 18px;
+            }
+
+            .content h1 {
+                font-size: 20px;
+            }
+
+            .content h2 {
+                font-size: 17px;
+            }
+
+            .content p,
+            .content ul li {
+                font-size: 13px;
+            }
+
+            .content .highlight-box {
+                padding: 8px 12px;
+                font-size: 13px;
             }
         }
 
-        /* 打印样式 */
         @media print {
-            body { background: white; padding: 0; }
-            .main-wrapper { box-shadow: none; border: 1px solid #ccc; }
-            .sidebar { background: #f9f9f9; }
+            body {
+                background: white;
+                padding: 0.2in;
+            }
+            .main-wrapper {
+                box-shadow: none;
+                border: 1px solid #ccc;
+                border-radius: 0;
+            }
+            .sidebar {
+                background: #f9f9f9;
+            }
         }
     </style>
 </head>
@@ -225,11 +430,9 @@
 <div class="main-wrapper">
     <!-- ===== 左侧信息栏 ===== -->
     <aside class="sidebar">
-        <!-- 头像区域 - 请将图片文件放在同目录下，并修改 src 路径 -->
         <div class="avatar">
-            <!-- 方式一：使用自己的图片，取消下面注释并注释掉 placeholder 块 -->
             <img src="zheng_tianci.jpg" alt="郑天赐头像">
-                 </div>
+        </div>
 
         <table class="info-table">
             <tr><td class="label">中文名</td><td class="value">郑天赐</td></tr>
@@ -238,8 +441,8 @@
             <tr><td class="label">出生地</td><td class="value">贵州贵阳</td></tr>
             <tr><td class="label">出生日期</td><td class="value">2003年10月5日</td></tr>
             <tr><td class="label">职业</td><td class="value">电气工程技术人员</td></tr>
-            <tr><td class="label">毕业院校</td><td class="value">贵州工业职业技术学院（贵州工业职业技术大学）</td></tr>
-            <tr><td class="label">主要成就</td><td class="value" style="font-size:13px; line-height:1.5;">独立开发“电力参数一体化计算平台”并获软件著作权；持有电工三级（高级工）证书</td></tr>
+            <tr><td class="label">毕业院校</td><td class="value">贵州工业职业技术学院</td></tr>
+            <tr><td class="label">主要成就</td><td class="value" style="font-size:13px; line-height:1.5;">独立开发“电力参数一体化计算平台”并获软著；持有电工三级（高级工）证书</td></tr>
             <tr><td class="label">代表作品</td><td class="value">电力参数一体化计算平台 V2.0</td></tr>
         </table>
     </aside>
@@ -249,36 +452,42 @@
         <h1>郑天赐</h1>
         <div class="subhead">电气工程技术人员</div>
 
-        <!-- 概述 -->
         <p><strong>郑天赐</strong>，男，中国贵州贵阳人，电气工程技术人员、软件开发者。持有<strong>电工三级（高级工）</strong>职业技能等级证书，并独立开发了“<strong>电力参数一体化计算平台</strong>”，该软件于2026年7月6日获得中华人民共和国国家版权局计算机软件著作权登记（登记号：2026SR0712497）。主要研究方向为电力系统自动化与电气工程软件工具开发。</p>
 
-        <!-- 人物经历 -->
         <h2>人物经历</h2>
-      
         <ul>
             <li><strong>2024年9月26日</strong>，通过贵州工业职业技术学院组织的职业技能等级认定，获得<strong>电工三级（高级工）</strong>职业技能等级证书（证书编号：Y000052003011243001558）。</li>
-            <li><strong>2026年7月6日</strong>，独立开发的“<strong>电力参数一体化计算平台</strong>”获得中国国家版权局计算机软件著作权登记证书（登记号：2026SR0712497）。</li>
+            <li><strong>2026年7月6日</strong>，独立开发的“<strong>电力参数一体化计算平台</strong>”获得国家版权局计算机软件著作权登记证书（登记号：2026SR0712497）。</li>
         </ul>
 
-        <!-- 研究方向 -->
         <h2>研究方向</h2>
         <ul>
             <li><strong>电力系统自动化</strong>：涉及电力系统运行、控制以及自动化技术。</li>
             <li><strong>电气工程软件工具开发</strong>：针对电力参数计算、分析等环节，开发集成化、高效化的软件工具。</li>
         </ul>
 
-        <!-- 主要成就 -->
         <h2>主要成就</h2>
+
         <div class="highlight-box">
-            <p><strong>软件著作权</strong>：2026年7月6日，独立开发的“电力参数一体化计算平台”获得计算机软件著作权登记（登记号：2026SR0712497）。该软件集成了电力系统过流计算、短路电流计算等核心功能，旨在提升电力参数计算的效率与准确性。</p>
-        </div>
-        <div class="highlight-box">
-            <p><strong>职业技能等级</strong>：2024年9月26日，获得电工三级（高级工）职业技能等级证书（证书编号：Y000052003011243001558），具备独立完成复杂电气系统安装、调试与故障排查的能力。</p>
+            <p>
+                <strong>软件著作权</strong>：2026年7月6日，独立开发的“电力参数一体化计算平台”获得计算机软件著作权登记（登记号：2026SR0712497）。该软件集成了电力系统过流计算、短路电流计算等核心功能，旨在提升电力参数计算的效率与准确性。
+            </p>
+            <p class="check-link">
+                🔍 <a href="https://www.ccopyright.com.cn/" target="_blank" rel="noopener noreferrer">点此查验真伪（中国版权保护中心官网）</a>
+            </p>
         </div>
 
-          <!-- 底部版权 -->
-        <div style="margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9edf2; font-size: 13px; color: #8a9aa8; text-align: center;">
-            © 2026 郑天赐 · 个人展示页 &nbsp;|&nbsp; 数据更新日期：2026年7月6日
+        <div class="highlight-box">
+            <p>
+                <strong>职业技能等级</strong>：2024年9月26日，获得电工三级（高级工）职业技能等级证书（证书编号：Y000052003011243001558），具备独立完成复杂电气系统安装、调试与故障排查的能力。
+            </p>
+            <p class="check-link">
+                🔍 <a href="http://jndj.osta.org.cn/" target="_blank" rel="noopener noreferrer">点此查验真伪（技能人才评价证书全国联网查询）</a>
+            </p>
+        </div>
+
+        <div class="footer">
+            © 2026 郑天赐 &nbsp;|&nbsp; 数据更新日期：2026年7月11日
         </div>
     </main>
 </div>
