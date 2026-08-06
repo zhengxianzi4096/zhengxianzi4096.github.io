@@ -922,7 +922,7 @@
                     <a class="gov-link" href="https://jyj.guiyang.gov.cn/" target="_blank" rel="noopener noreferrer">贵阳市教育局</a>
                     和
                     <a class="gov-link" href="https://rsj.guiyang.gov.cn/" target="_blank" rel="noopener noreferrer">贵阳市人力资源和社会保障局</a>
-                    联合主办的贵阳市职业院校（技工院校）技能大赛，在加工制造类“光机电一体设备组装与调试”团体项目中荣获一等奖[reference:2][reference:3]。
+                    联合主办的贵阳市职业院校（技工院校）技能大赛，在加工制造类“光机电一体设备组装与调试”团体项目中荣获一等奖。
                     <span class="en"><strong>December 2020</strong>: Participated in the Guiyang Vocational College (Technical School) Skills Competition jointly organized by the <a class="gov-link" href="https://jyj.guiyang.gov.cn/" target="_blank" rel="noopener noreferrer">Guiyang Education Bureau</a> and the <a class="gov-link" href="https://rsj.guiyang.gov.cn/" target="_blank" rel="noopener noreferrer">Guiyang Human Resources and Social Security Bureau</a>, winning the first prize in the team project "Assembly and Debugging of Opto-mechatronic Integrated Equipment" in the processing and manufacturing category.</span>
                 </li>
                 <!-- ===== 2021年大赛 ===== -->
@@ -931,7 +931,7 @@
                     <a class="gov-link" href="https://jyj.guiyang.gov.cn/" target="_blank" rel="noopener noreferrer">贵阳市教育局</a>
                     和
                     <a class="gov-link" href="https://rsj.guiyang.gov.cn/" target="_blank" rel="noopener noreferrer">贵阳市人力资源和社会保障局</a>
-                    联合主办的贵阳市职业院校（技工院校）技能大赛，在加工制造类“机电一体化设备安装与调试”团体项目中荣获一等奖[reference:4][reference:5]。
+                    联合主办的贵阳市职业院校（技工院校）技能大赛，在加工制造类“机电一体化设备安装与调试”团体项目中荣获一等奖。
                     <span class="en"><strong>December 2021</strong>: Participated in the Guiyang Vocational College (Technical School) Skills Competition jointly organized by the <a class="gov-link" href="https://jyj.guiyang.gov.cn/" target="_blank" rel="noopener noreferrer">Guiyang Education Bureau</a> and the <a class="gov-link" href="https://rsj.guiyang.gov.cn/" target="_blank" rel="noopener noreferrer">Guiyang Human Resources and Social Security Bureau</a>, winning the first prize in the team project "Installation and Debugging of Mechatronic Equipment" in the processing and manufacturing category.</span>
                 </li>
                 <!-- ===== 电工证书 ===== -->
@@ -990,6 +990,44 @@
                     🔍 <a href="http://jndj.osta.org.cn/" target="_blank" rel="noopener noreferrer">点此查验真伪</a>
                     <span class="en"><a href="http://jndj.osta.org.cn/" target="_blank" rel="noopener noreferrer">Verify authenticity</a> (技能人才评价证书全国联网查询)</span>
                 </p>
+            </div>
+
+            <!-- ===== 新增技术文章区块（图文并茂，无链接） ===== -->
+            <h2>
+                技术文章
+                <span class="en">Technical Articles</span>
+            </h2>
+
+            <div class="highlight-box" style="border-left-color: #c0392b;">
+                <p style="font-size:16px; font-weight:600; margin-bottom:4px;">
+                    📄 发电机并网深度解析——准同期与非同期并列的波形对比及数学判据
+                    <span class="en" style="font-size:13px; display:inline; margin-left:8px; font-weight:400;">
+                        In-depth Analysis of Generator Synchronization
+                    </span>
+                </p>
+                <p style="margin-bottom:12px;">
+                    <strong>文章摘要</strong>：从电压幅值、频率和相位角三个维度，通过三相正弦波形图与数学公式推导，直观对比了准同期并列（δ=0）与两种极端非同期并列（δ=180°、频率差20%）的物理现象与数学本质。提出了并网操作必须满足的三大铁律：<strong>电压相等、频率相等、相角差为零</strong>，三者缺一不可。
+                    <span class="en"><strong>Abstract</strong>: This article compares ideal synchronization (δ=0) with two extreme asynchronous conditions (δ=180° and 20% frequency difference) through three-phase sinusoidal waveforms and mathematical derivations, presenting the three fundamental rules for grid connection: equal voltage, equal frequency, and zero phase angle difference.</span>
+                </p>
+                <!-- ===== 三张波形图 ===== -->
+                <div style="display:flex; flex-wrap:wrap; gap:16px; margin:12px 0 8px 0; justify-content:center;">
+                    <div style="flex:1; min-width:180px; max-width:280px; text-align:center; background:#fafcff; border-radius:8px; padding:10px 8px 6px; border:1px solid #e6ecf3;">
+                        <img src="wave_ideal.png" alt="理想准同期并列波形" style="width:100%; height:auto; border-radius:4px; background:#fff;" />
+                        <p style="font-size:13px; margin-top:4px; color:#1a2634; font-weight:500;">理想准同期并列</p>
+                        <p style="font-size:11px; color:#7a8b9e; margin-top:0;">电压波形完全重合，合闸无冲击</p>
+                    </div>
+                    <div style="flex:1; min-width:180px; max-width:280px; text-align:center; background:#fafcff; border-radius:8px; padding:10px 8px 6px; border:1px solid #e6ecf3;">
+                        <img src="wave_danger.png" alt="相位差180°毁灭性冲击" style="width:100%; height:auto; border-radius:4px; background:#fff;" />
+                        <p style="font-size:13px; margin-top:4px; color:#c0392b; font-weight:500;">相位差 180°（毁灭性冲击）</p>
+                        <p style="font-size:11px; color:#7a8b9e; margin-top:0;">冲击电流等同机端三相短路</p>
+                    </div>
+                    <div style="flex:1; min-width:180px; max-width:280px; text-align:center; background:#fafcff; border-radius:8px; padding:10px 8px 6px; border:1px solid #e6ecf3;">
+                        <img src="wave_freq.png" alt="频率不同失步保护" style="width:100%; height:auto; border-radius:4px; background:#fff;" />
+                        <p style="font-size:13px; margin-top:4px; color:#e67e22; font-weight:500;">频率不同（失步保护跳闸）</p>
+                        <p style="font-size:11px; color:#7a8b9e; margin-top:0;">相位差持续变化，产生剧烈交变应力</p>
+                    </div>
+                </div>
+                <!-- 此处已删除原文链接，符合“不要链接”的要求 -->
             </div>
 
             <!-- ===== 底部声明 ===== -->
