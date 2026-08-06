@@ -5,7 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>郑天赐 电气工程技术人员</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <!-- SEO & 结构化数据（与之前一致，省略以节省篇幅，实际使用请保留） -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- ===== 完整 SEO ===== -->
+    <meta name="description" content="郑天赐 (Zheng Tianci)，贵州贵阳人，电气工程技术人员，持有电工三级（高级工）证书，独立开发电力参数一体化计算平台并获国家版权局软件著作权。" />
+    <meta name="keywords" content="郑天赐, Zheng Tianci, 电工三级, 软件著作权, 电力参数一体化计算平台, 电气工程, 贵州工业职业技术大学" />
+    <link rel="canonical" href="https://www.zhengtianci.com/" />
+
+    <!-- ===== 结构化数据 (JSON-LD) ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "郑天赐",
+            "alternateName": ["Zheng Tianci"],
+            "jobTitle": "电气工程技术人员",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "贵州工业职业技术大学",
+                "url": "http://www.gzky.edu.cn/"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "贵阳",
+                "addressRegion": "贵州",
+                "addressCountry": "中国"
+            },
+            "nationality": {
+                "@type": "Country",
+                "name": "中国",
+                "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD"
+            },
+            "birthDate": "2003-10-05",
+            "award": [{
+                "@type": "Award",
+                "name": "电工三级（高级工）职业技能等级证书",
+                "awardingOrganization": {
+                    "@type": "Organization",
+                    "name": "贵州工业职业技术大学",
+                    "url": "http://www.gzky.edu.cn/"
+                },
+                "date": "2024-09-26"
+            }, {
+                "@type": "Award",
+                "name": "计算机软件著作权登记证书",
+                "awardingOrganization": {
+                    "@type": "Organization",
+                    "name": "中华人民共和国国家版权局"
+                },
+                "date": "2026-07-06",
+                "identifier": "2026SR0712497"
+            }],
+            "hasCredential": [{
+                "@type": "EducationalOccupationalCredential",
+                "name": "电工三级（高级工）",
+                "credentialCategory": "职业技能等级证书",
+                "issuedBy": {
+                    "@type": "Organization",
+                    "name": "贵州工业职业技术大学",
+                    "url": "http://www.gzky.edu.cn/"
+                }
+            }, {
+                "@type": "EducationalOccupationalCredential",
+                "name": "电力参数一体化计算平台 V2.0",
+                "credentialCategory": "计算机软件著作权",
+                "issuedBy": {
+                    "@type": "Organization",
+                    "name": "中华人民共和国国家版权局"
+                },
+                "identifier": "2026SR0712497"
+            }],
+            "knowsAbout": ["电力系统自动化", "电气工程软件工具开发", "工业软件开发"],
+            "url": "https://www.zhengtianci.com/",
+            "sameAs": [
+                "https://www.zhengtianci.com/"
+            ]
+        }
+    </script>
+
     <style>
         /* ===== 全局重置 & 基础 ===== */
         *,
@@ -1216,19 +1293,19 @@
 
                 <!-- ===== TAB 导航 ===== -->
                 <nav class="tab-nav" role="tablist" aria-label="内容导航">
-                    <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-experience" data-target="panel-experience">
+                    <button class="tab-btn active" role="tab" aria-selected="true" data-target="panel-experience">
                         人物经历
                         <span class="en-tab">Experience</span>
                     </button>
-                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-research" data-target="panel-research">
+                    <button class="tab-btn" role="tab" aria-selected="false" data-target="panel-research">
                         研究方向
                         <span class="en-tab">Research</span>
                     </button>
-                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-achievements" data-target="panel-achievements">
+                    <button class="tab-btn" role="tab" aria-selected="false" data-target="panel-achievements">
                         主要成就
                         <span class="en-tab">Achievements</span>
                     </button>
-                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-article" data-target="panel-article">
+                    <button class="tab-btn" role="tab" aria-selected="false" data-target="panel-article">
                         技术文章
                         <span class="en-tab">Article</span>
                     </button>
@@ -1412,7 +1489,6 @@
             const mainContent = document.getElementById('main-content');
             const publicContent = document.getElementById('public-content');
 
-            // 默认显示首页
             function showHome() {
                 mainContent.style.display = 'block';
                 publicContent.style.display = 'none';
@@ -1437,14 +1513,10 @@
                 showPublic();
             });
 
-            // 默认激活首页（如果URL无hash）
-            if (!window.location.hash || window.location.hash === '#home') {
-                showHome();
-            } else if (window.location.hash === '#public') {
-                showPublic();
-            }
+            // 默认激活首页
+            showHome();
 
-            // --- Tab 切换（保持不变） ---
+            // --- Tab 切换 ---
             const tabs = document.querySelectorAll('.tab-btn');
             const panels = {
                 'panel-experience': document.getElementById('panel-experience'),
@@ -1484,7 +1556,7 @@
                 });
             });
 
-            // 确保默认Tab激活
+            // 确保默认Tab激活（第一个）
             const defaultActive = document.querySelector('.tab-btn.active');
             if (defaultActive) {
                 const targetId = defaultActive.getAttribute('data-target');
