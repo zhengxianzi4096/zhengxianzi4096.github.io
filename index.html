@@ -7,8 +7,8 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <meta property="og:image" content="https://www.zhengtianci.com/FC17C1068D374E151FFD2B260BDCD62E.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
 
     <!-- ===== 完整 SEO ===== -->
     <meta name="description" content="郑天赐 (Zheng Tianci)，贵州贵阳人，电气工程技术人员，持有电工三级（高级工）证书，独立开发电力参数一体化计算平台并获国家版权局软件著作权。" />
@@ -81,7 +81,8 @@
             "knowsAbout": ["电力系统自动化", "电气工程软件工具开发", "工业软件开发"],
             "url": "https://www.zhengtianci.com/",
             "sameAs": [
-                "https://www.zhengtianci.com/"
+                "https://www.zhengtianci.com/",
+                "https://baike.baidu.com/item/%E9%83%91%E5%A4%A9%E8%B5%90/68448153"
             ]
         }
     </script>
@@ -276,7 +277,8 @@
         .school-link,
         .job-link,
         .country-link,
-        .gov-link {
+        .gov-link,
+        .baike-link {
             color: var(--primary);
             text-decoration: none;
             border-bottom: 1px dashed var(--border);
@@ -285,7 +287,8 @@
         .school-link:hover,
         .job-link:hover,
         .country-link:hover,
-        .gov-link:hover {
+        .gov-link:hover,
+        .baike-link:hover {
             border-bottom: 1px solid var(--primary);
         }
 
@@ -317,6 +320,17 @@
             color: var(--text-secondary);
             display: inline;
             margin-left: 10px;
+        }
+
+        /* ===== 让标题中的姓名链接继承标题样式 ===== */
+        .content-header h1 a.name-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: none;
+            transition: border-bottom 0.2s;
+        }
+        .content-header h1 a.name-link:hover {
+            border-bottom: 2px solid var(--primary);
         }
 
         .content-header .subhead {
@@ -1146,7 +1160,8 @@
             .school-link,
             .job-link,
             .country-link,
-            .gov-link {
+            .gov-link,
+            .baike-link {
                 border-bottom: 1px solid #999;
             }
             .en {
@@ -1200,7 +1215,7 @@
     </header>
 
     <div class="main-wrapper">
-        <!-- ===== 左侧信息栏（始终显示） ===== -->
+        <!-- ===== 左侧信息栏 ===== -->
         <aside class="sidebar">
             <div class="avatar">
                 <img src="zheng_tianci.jpg" alt="郑天赐头像 / Zheng Tianci Avatar" />
@@ -1208,7 +1223,6 @@
 
             <div class="sidebar-info">
                 <div class="sidebar-title" aria-hidden="true">人员信息</div>
-
                 <table class="info-table">
                     <tr>
                         <td class="label">中文名 <span class="en">Name</span></td>
@@ -1276,7 +1290,7 @@
             <div id="main-content">
                 <div class="content-header">
                     <h1>
-                        郑天赐
+                        <a class="name-link" href="https://baike.baidu.com/item/%E9%83%91%E5%A4%A9%E8%B5%90/68448153" target="_blank" rel="noopener noreferrer">郑天赐</a>
                         <span class="en">Zheng Tianci</span>
                     </h1>
                     <div class="subhead">
@@ -1315,10 +1329,16 @@
                 </nav>
 
                 <div class="tab-panels">
-                    <!-- 面板1：人物经历 -->
+                    <!-- 面板1：人物经历（含百科收录条目，无链接） -->
                     <section class="tab-panel active" id="panel-experience" role="tabpanel">
                         <h2>人物经历 <span class="en">Biography</span></h2>
                         <ul>
+                            <!-- ===== 百科收录条目（纯文本，无链接） ===== -->
+                            <li>
+                                <strong>百度百科收录</strong>：郑天赐个人词条已被百度百科收录，涵盖个人简介、职业履历、主要成就等信息，供公众查阅。
+                                <span class="en"><strong>Baidu Baike Entry</strong>: Zheng Tianci's personal entry has been included in Baidu Baike, covering biography, career, major achievements, and other information for public reference.</span>
+                                <!-- 此处不添加任何链接 -->
+                            </li>
                             <li>
                                 <strong>2020年12月</strong>，参加由
                                 <a class="gov-link" href="https://jyj.guiyang.gov.cn/" target="_blank">贵阳市教育局</a>
@@ -1424,13 +1444,18 @@
                 </div><!-- /tab-panels -->
             </div><!-- /main-content -->
 
-            <!-- ===== 信息公开页面（默认隐藏） ===== -->
+            <!-- ===== 信息公开页面（保留百科链接，正常显示） ===== -->
             <div id="public-content">
                 <h2>
                     信息公开
                     <span class="en">Information Disclosure</span>
                 </h2>
                 <ul class="public-list">
+                    <!-- 百科链接保留，正常显示 -->
+                    <li>
+                        <span class="link-label">百度百科 · 郑天赐 <span class="en">Baidu Baike · Zheng Tianci</span></span>
+                        <a href="https://baike.baidu.com/item/%E9%83%91%E5%A4%A9%E8%B5%90/68448153" target="_blank">https://baike.baidu.com/item/%E9%83%91%E5%A4%A9%E8%B5%90/68448153</a>
+                    </li>
                     <li>
                         <span class="link-label">电工三级证书查询 <span class="en">Electrician Level 3 Verification</span></span>
                         <a href="http://jndj.osta.org.cn/" target="_blank">http://jndj.osta.org.cn/</a>
@@ -1466,7 +1491,7 @@
                 </ul>
             </div>
 
-            <!-- ===== 底部声明（始终显示） ===== -->
+            <!-- ===== 底部声明 ===== -->
             <div class="footer">
                 <div style="margin-bottom: 4px; font-weight: 500; color: var(--text);">
                     信息核实声明：本页所载信息经公开资料及本人陈述交叉核对，内容真实可靠。
