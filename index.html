@@ -7,8 +7,8 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <meta property="og:image" content="https://www.zhengtianci.com/FC17C1068D374E151FFD2B260BDCD62E.jpg">
-    <meta property="og:image:width" content="500">
-    <meta property="og:image:height" content="500">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
 
     <!-- ===== 完整 SEO ===== -->
     <meta name="description" content="郑天赐 (Zheng Tianci)，贵州贵阳人，电气工程技术人员，持有电工三级（高级工）证书，独立开发电力参数一体化计算平台并获国家版权局软件著作权。" />
@@ -145,6 +145,16 @@
             font-weight: 600;
             font-size: 15px;
         }
+        /* 导航栏中的姓名链接 */
+        .top-bar .site-title a.name-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .top-bar .site-title a.name-link:hover {
+            border-bottom-color: #fff;
+        }
         .top-bar .site-title .en {
             font-weight: 300;
             font-size: 13px;
@@ -251,6 +261,16 @@
             font-weight: 500;
             font-size: 14px;
         }
+        /* 侧边栏中的姓名链接 */
+        .info-table .value a.name-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .info-table .value a.name-link:hover {
+            border-bottom: 1px solid var(--primary);
+        }
 
         .info-table .value-sm {
             font-size: 13px;
@@ -322,7 +342,7 @@
             margin-left: 10px;
         }
 
-        /* ===== 让标题中的姓名链接继承标题样式 ===== */
+        /* 标题中的姓名链接 */
         .content-header h1 a.name-link {
             color: inherit;
             text-decoration: none;
@@ -367,6 +387,17 @@
             color: #5f7082;
             display: block;
             margin-top: 4px;
+        }
+        /* 简介中的姓名链接 */
+        .intro-text a.name-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+            font-weight: inherit;
+        }
+        .intro-text a.name-link:hover {
+            border-bottom: 1px solid var(--primary);
         }
 
         /* ===== TAB 导航 ===== */
@@ -1204,7 +1235,8 @@
     <header class="top-bar">
         <div class="container">
             <div class="site-title">
-                郑天赐 · 电气工程技术人员
+                <a class="name-link" href="https://baike.baidu.com/item/%E9%83%91%E5%A4%A9%E8%B5%90/68448153" target="_blank" rel="noopener noreferrer">郑天赐</a>
+                · 电气工程技术人员
                 <span class="en">Zheng Tianci · Electrical Engineering Technician</span>
             </div>
             <div class="top-links">
@@ -1226,7 +1258,10 @@
                 <table class="info-table">
                     <tr>
                         <td class="label">中文名 <span class="en">Name</span></td>
-                        <td class="value">郑天赐 <span class="en">Zheng Tianci</span></td>
+                        <td class="value">
+                            <a class="name-link" href="https://baike.baidu.com/item/%E9%83%91%E5%A4%A9%E8%B5%90/68448153" target="_blank" rel="noopener noreferrer">郑天赐</a>
+                            <span class="en">Zheng Tianci</span>
+                        </td>
                     </tr>
                     <tr>
                         <td class="label">国籍 <span class="en">Nationality</span></td>
@@ -1302,10 +1337,10 @@
                 </div>
 
                 <div class="intro-text">
-                    <strong>郑天赐</strong>，男，
+                    <a class="name-link" href="https://baike.baidu.com/item/%E9%83%91%E5%A4%A9%E8%B5%90/68448153" target="_blank" rel="noopener noreferrer"><strong>郑天赐</strong></a>，男，
                     <a class="country-link" href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD" target="_blank" rel="noopener noreferrer">中国</a>
                     贵州贵阳人，电气工程技术人员、软件开发者。持有<strong>电工三级（高级工）</strong>职业技能等级证书，并独立开发了“<strong>电力参数一体化计算平台</strong>”，该软件于2026年7月6日获得中华人民共和国国家版权局计算机软件著作权登记（登记号：2026SR0712497）。主要研究方向为电力系统自动化与电气工程软件工具开发。
-                    <span class="en"><strong>Zheng Tianci</strong>, male, from Guiyang, Guizhou, <a class="country-link" href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD" target="_blank" rel="noopener noreferrer">China</a>, is an electrical engineering technician and software developer. He holds the <strong>Electrician Level 3 (Senior Worker)</strong> vocational skill level certificate and independently developed the "<strong>Integrated Power Parameter Calculation Platform</strong>," which received the Computer Software Copyright Registration from the National Copyright Administration of China on July 6, 2026 (Registration No.: 2026SR0712497). His main research directions include power system automation and electrical engineering software tool development.</span>
+                    <span class="en"><a class="name-link" href="https://baike.baidu.com/item/%E9%83%91%E5%A4%A9%E8%B5%90/68448153" target="_blank" rel="noopener noreferrer"><strong>Zheng Tianci</strong></a>, male, from Guiyang, Guizhou, <a class="country-link" href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD" target="_blank" rel="noopener noreferrer">China</a>, is an electrical engineering technician and software developer. He holds the <strong>Electrician Level 3 (Senior Worker)</strong> vocational skill level certificate and independently developed the "<strong>Integrated Power Parameter Calculation Platform</strong>," which received the Computer Software Copyright Registration from the National Copyright Administration of China on July 6, 2026 (Registration No.: 2026SR0712497). His main research directions include power system automation and electrical engineering software tool development.</span>
                 </div>
 
                 <!-- ===== TAB 导航 ===== -->
@@ -1335,7 +1370,7 @@
                         <ul>
                             <!-- ===== 百科收录条目（纯文本，无链接） ===== -->
                             <li>
-                                <strong>百度百科收录</strong>：郑天赐个人词条已被百度百科收录。
+                                <strong>百度百科收录</strong>：郑天赐个人词条已被百度百科收录，涵盖个人简介、职业履历、主要成就等信息，供公众查阅。
                                 <span class="en"><strong>Baidu Baike Entry</strong>: Zheng Tianci's personal entry has been included in Baidu Baike, covering biography, career, major achievements, and other information for public reference.</span>
                                 <!-- 此处不添加任何链接 -->
                             </li>
